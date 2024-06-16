@@ -96,16 +96,28 @@ button {
 	font: inherit;
 	background-color: #3d8168;
 	color: #ffffff;
-	padding: 10px 100px;
+	width: 96%;
 	text-align: center;
+	padding: 10px 0px;
 	font-size: 0.8rem;
 	font-weight: 700;
 	border-radius: 5px;
 	margin-top: 10px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #1a4032;
+}
+
+button:active {
+	background-color: #1a4032;
+	translate: 2px 2px;
 }
 
 .flex {
 	display: flex;
 	gap: 10px;
 	align-items: center;
+	justify-content: center;
 }
