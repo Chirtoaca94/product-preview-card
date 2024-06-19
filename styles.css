@@ -121,3 +121,47 @@ button:active {
 	align-items: center;
 	justify-content: center;
 }
+
+@media (min-width: 375px) {
+	body {
+		width: min(1440px, 100%);
+	}
+
+	.container {
+		display: flex;
+		margin: 20vh auto;
+		border-radius: 5px;
+		justify-content: center;
+		width: min(600px, 80%);
+	}
+
+	img:first-of-type {
+		display: inline-block;
+		width: 50%;
+		object-fit: cover;
+		border-top-right-radius: 0%;
+		border-bottom-left-radius: 5px;
+	}
+
+	.content-container {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	button {
+		margin-top: 20px;
+	}
+
+	.content-container button img {
+		all: unset;
+	}
+
+	.product {
+		margin-bottom: 10px;
+	}
+
+	.description {
+		margin-top: 10px;
+	}
+}
