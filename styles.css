@@ -108,6 +108,10 @@ button {
 	border-radius: 5px;
 	margin-top: 10px;
 	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
 }
 
 button:hover {
@@ -117,13 +121,6 @@ button:hover {
 button:active {
 	background-color: #1a4032;
 	translate: 2px 2px;
-}
-
-.flex {
-	display: flex;
-	gap: 10px;
-	align-items: center;
-	justify-content: center;
 }
 
 @media (min-width: 27rem) {
@@ -139,12 +136,14 @@ button:active {
 		background-size: cover;
 		background-position: top center;
 		border-top-left-radius: 5px;
-		border-top-right-radius: 5px;
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 5px;
 	}
 
 	.container {
 		display: flex;
 		margin: 20vh auto;
+		scale: 0.9;
 		border-radius: 5px;
 		justify-content: center;
 		width: min(600px, 100%);
